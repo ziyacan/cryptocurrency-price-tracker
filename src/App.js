@@ -17,7 +17,7 @@ function App() {
         setCoins(res.data);
       })
       .catch((err) => console.log(err));
-  });
+  }, []);
 
   const handleChange = (e) => {
     setSearch(e.target.value);
